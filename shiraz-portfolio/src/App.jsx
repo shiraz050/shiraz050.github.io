@@ -36,8 +36,7 @@ export default function App() {
       description:
         'Software Engineer with 3+ years of experience building scalable SaaS platforms, distributed systems, AI integrations, and cloud-native applications using .NET, .NET Core, C#, Python, React, Angular, OpenAI, AWS, Azure, Kafka, RabbitMQ, and Twilio.',
 
-      image:
-        '/profile.png', // place image inside public/profile.png
+      image: `${import.meta.env.BASE_URL}images/profile.png`,
     },
 
     social: {
@@ -789,7 +788,7 @@ const particlesOptions = useMemo(
       >
         <div className="overflow-hidden">
           <img
-            src="/presenting-award.JPG"
+            src={`${import.meta.env.BASE_URL}images/presenting-award.JPG`}
             alt="Presenting Award"
             className="w-full h-[500px] object-cover group-hover:scale-105 transition duration-700"
           />
@@ -822,7 +821,7 @@ const particlesOptions = useMemo(
       >
         <div className="overflow-hidden">
           <img
-            src="/champion-award.JPG"
+            src={`${import.meta.env.BASE_URL}images/champion-award.JPG`}
             alt="Champion Award Certificate"
             className="w-full h-[500px] object-cover group-hover:scale-105 transition duration-700"
           />

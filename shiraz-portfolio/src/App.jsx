@@ -609,6 +609,7 @@ const particlesOptions = useMemo(
                   <img
                     src={portfolio.personal.image}
                     alt={portfolio.personal.name}
+                    loading="lazy"
                     className="
                       w-[300px]
                       h-[340px]
@@ -804,6 +805,7 @@ const particlesOptions = useMemo(
           <img
             src={`${import.meta.env.BASE_URL}images/presenting-award.JPG`}
             alt="Presenting Award"
+            loading="lazy"
             className="w-full h-[500px] object-cover group-hover:scale-105 transition duration-700"
           />
         </div>
@@ -837,6 +839,7 @@ const particlesOptions = useMemo(
           <img
             src={`${import.meta.env.BASE_URL}images/champion-award.JPG`}
             alt="Champion Award Certificate"
+            loading="lazy"
             className="w-full h-[500px] object-cover group-hover:scale-105 transition duration-700"
           />
         </div>

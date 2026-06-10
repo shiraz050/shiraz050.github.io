@@ -49,7 +49,7 @@ export default function App() {
 
     stats: [
       {
-        value: '200+',
+        value: '1000+',
         label: 'Customers Served',
       },
 

@@ -34,7 +34,7 @@ export default function App() {
         'Building scalable AI systems for modern SaaS products.',
 
       description:
-        'Software Engineer with 3+ years of experience building scalable SaaS platforms, distributed systems, AI integrations, and cloud-native applications using .NET, .NET Core, C#, Python, React, Angular, OpenAI, AWS, Azure, Kafka, RabbitMQ, and Twilio.',
+        'Software Engineer with extensive experience building scalable SaaS platforms, distributed systems, AI integrations, and cloud-native applications using .NET, .NET Core, C#, Python, React, Angular, OpenAI, AWS, Azure, Kafka, RabbitMQ, and Twilio.',
 
       image: `${import.meta.env.BASE_URL}images/profile.png`,
     },
@@ -45,23 +45,16 @@ export default function App() {
       linkedin: 'https://www.linkedin.com/in/shiraz-a-234bb9217/',
 
       email: 'mailto:shirazahmed847@gmail.com',
-
-      resume: '#',
     },
 
     stats: [
-      {
-        value: '3+',
-        label: 'Years Experience',
-      },
-
       {
         value: '200+',
         label: 'Customers Served',
       },
 
       {
-        value: '10+',
+        value: '20+',
         label: 'Systems Built',
       },
     ],
@@ -414,25 +407,18 @@ const particlesOptions = useMemo(
               About
             </a>
 
-            <a href="#projects" className="hover:text-white transition">
-              Projects
-            </a>
-
             <a href="#skills" className="hover:text-white transition">
               Skills
+            </a>
+
+            <a href="#projects" className="hover:text-white transition">
+              Projects
             </a>
 
             <a href="#contact" className="hover:text-white transition">
               Contact
             </a>
           </div>
-
-          <a
-            href={portfolio.social.resume}
-            className="px-4 md:px-5 py-2 rounded-full bg-white text-black text-xs md:text-sm font-medium hover:scale-105 transition duration-300"
-          >
-            Resume
-          </a>
         </div>
       </nav>
 
@@ -440,7 +426,7 @@ const particlesOptions = useMemo(
       {/* HERO */}
       {/* ========================================= */}
 
-      <section className="relative min-h-screen flex items-center pt-40 md:pt-52 pb-20 ">
+      <section className="relative min-h-screen flex items-center pt-40 md:pt-52 pb-20 " id="about">
         
         <div className="max-w-7xl mx-auto px-6 w-full">
 
@@ -467,10 +453,6 @@ const particlesOptions = useMemo(
               <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-8">
                 <div className="px-4 py-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 text-cyan-300 text-xs md:text-sm">
                   {portfolio.personal.role}
-                </div>
-
-                <div className="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-white/60 text-xs md:text-sm">
-                  3+ Years Experience
                 </div>
               </div>
 
@@ -647,6 +629,38 @@ const particlesOptions = useMemo(
                 </div>
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* ========================================= */}
+      {/* SKILLS */}
+      {/* ========================================= */}
+
+      <section
+        id="skills"
+        className="relative py-24 border-t border-white/5"
+      >
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="mb-16">
+            <p className="uppercase tracking-[0.3em] text-cyan-300/70 text-sm mb-4">
+              Tech Stack
+            </p>
+
+            <h2 className="text-4xl md:text-6xl font-black tracking-[-0.04em]">
+              Technologies & Tools.
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {portfolio.techStack.map((tech) => (
+              <div
+                key={tech}
+                className="rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.08] to-white/[0.03] backdrop-blur-xl p-6 hover:border-cyan-400/50 transition duration-300 text-center"
+              >
+                <p className="text-white/80 font-medium">{tech}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

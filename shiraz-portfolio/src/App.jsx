@@ -81,6 +81,7 @@ export default function App() {
       'Twilio',
       'Entity Framework',
       'Hibernate',
+      'Microservices',
     ],
 
 projects: [
@@ -226,6 +227,7 @@ stack: [
   'Twilio',
   'SQL Server',
   'REST APIs',
+  'Microservices',
 ],
 
 link: 'https://tryswitch.com',
